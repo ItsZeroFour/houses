@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main/index.css" />
+    <link rel="stylesheet" href="./css/main/reset.css" />
+    <link rel="stylesheet" href="./css/main/fonts.css" />
+    <link rel="stylesheet" href="./css/main/vars.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Favorite house</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header home__header">
+        <div class="container" id="header__menu-desc">
+          <img class="header__logo" src="./assets/images/Logo.svg" alt="logo" />
+
+          <nav class="header__nav">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+
+            <li>
+              <a href="#">О компании</a>
+            </li>
+
+            <li>
+              <a href="#">Вопросы и ответы</a>
+            </li>
+
+            <li>
+              <a href="#">ВАКАНСИИ</a>
+            </li>
+          </nav>
+
+          <button class="header__contacts-button">Контакты</button>
+        </div>
+
+        <div class="header__menu">
+          <div>
+            <img
+              class="header__logo"
+              src="./assets/images/Logo.svg"
+              alt="logo"
+            />
+
+            <div class="header__burger" onclick="toggleMenu()">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="header__open">
+            <nav class="header__nav">
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+
+              <li>
+                <a href="#">О компании</a>
+              </li>
+
+              <li>
+                <a href="#">Вопросы и ответы</a>
+              </li>
+
+              <li>
+                <a href="#">ВАКАНСИИ</a>
+              </li>
+            </nav>
+
+            <button class="header__-button">Контакты</button>
+          </div>
+        </div>
+      </header>
+      <main class="home">
+        <section
+          class="home__head"
+          style="background-image: url(./assets/images/Home/home-image.jpg)"
+        >
+          <div class="container">
+            <div class="home__head-left">
+              <h1>Строительство коттеджей и загородных домов «под ключ»</h1>
+
+              <p>
+                Мы все возьмем на себя, Вам останется только завести мебель и
+                отметить новоселье!
+              </p>
+
+              <div class="home__head-button">
+                <a href="#"
+                  >Рассчитать стоимость дома
+                  <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                /></a>
+              </div>
+            </div>
+
+            <div class="home__head-right">
+              <ul>
+                <li>
+                  <h2>12 %</h2>
+                  <p>
+                    LLorem ipsum dolor sit amet consectetur.Lorem ipsum dolor
+                    sit amet consectetur.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
+                    amet consectetur.
+                  </p>
+                </li>
+
+                <li>
+                  <h2>20 %</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
+                    amet consectetur.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
+                    amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
+                    amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </li>
+
+                <li>
+                  <h2>1 924</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
+                    amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="home__popular">
+          <div class="home__popular-left">
+            <div class="container">
+              <h4>Популярные <span>проекты</span></h4>
+              <p>
+                Мы работаем с соблюдением всех российских норм и стандартов
+                строительства и используем уникальные технологии, позволяющие
+                нашим домам служить нескольким поколениям.
+              </p>
+            </div>
+          </div>
+
+          <div class="home__popular-right">
+            <div class="swiper home__popular-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/Home/home-slider-1.jpg"
+                    alt="slider image 1"
+                  />
+
+                  <div>
+                    <div class="home__popular-slider-top">
+                      <div>
+                        <h3>Проект 1</h3>
+                        <p>Каркасный дом 10,0х11 м</p>
+                      </div>
+
+                      <div>
+                        <h4>5 890 000 ₽</h4>
+                      </div>
+                    </div>
+
+                    <div class="home__popular-slider-main">
+                      <ul>
+                        <li>
+                          <p>Площадь:</p>
+                          <p>190 м2</p>
+                        </li>
+
+                        <li>
+                          <p>Размер:</p>
+                          <p>10,0х11 м</p>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <li>
+                          <p>Площадь застройки:</p>
+                          <p>120 м2</p>
+                        </li>
+                        <li>
+                          <p>Этажность:</p>
+                          <p>Два</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <a href="#"
+                    >ПОДРОБНЕЕ
+                    <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                  /></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/Home/home-slider-2.jpg"
+                    alt="slider image 1"
+                  />
+
+                  <div class="home__popular-slider-top">
+                    <div>
+                      <h3>Проект 1</h3>
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+
+                    <div>
+                      <h4>5 890 000 ₽</h4>
+                    </div>
+                  </div>
+
+                  <div class="home__popular-slider-main">
+                    <ul>
+                      <li>
+                        <p>Площадь:</p>
+                        <p>190 м2</p>
+                      </li>
+
+                      <li>
+                        <p>Размер:</p>
+                        <p>10,0х11 м</p>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <p>Площадь застройки:</p>
+                        <p>120 м2</p>
+                      </li>
+                      <li>
+                        <p>Этажность:</p>
+                        <p>Два</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#"
+                    >ПОДРОБНЕЕ
+                    <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                  /></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/Home/home-slider-1.jpg"
+                    alt="slider image 1"
+                  />
+
+                  <div class="home__popular-slider-top">
+                    <div>
+                      <h3>Проект 1</h3>
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+
+                    <div>
+                      <h4>5 890 000 ₽</h4>
+                    </div>
+                  </div>
+
+                  <div class="home__popular-slider-main">
+                    <ul>
+                      <li>
+                        <p>Площадь:</p>
+                        <p>190 м2</p>
+                      </li>
+
+                      <li>
+                        <p>Размер:</p>
+                        <p>10,0х11 м</p>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <p>Площадь застройки:</p>
+                        <p>120 м2</p>
+                      </li>
+                      <li>
+                        <p>Этажность:</p>
+                        <p>Два</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#"
+                    >ПОДРОБНЕЕ
+                    <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                  /></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/Home/home-slider-2.jpg"
+                    alt="slider image 1"
+                  />
+
+                  <div class="home__popular-slider-top">
+                    <div>
+                      <h3>Проект 1</h3>
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+
+                    <div>
+                      <h4>5 890 000 ₽</h4>
+                    </div>
+                  </div>
+
+                  <div class="home__popular-slider-main">
+                    <ul>
+                      <li>
+                        <p>Площадь:</p>
+                        <p>190 м2</p>
+                      </li>
+
+                      <li>
+                        <p>Размер:</p>
+                        <p>10,0х11 м</p>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <p>Площадь застройки:</p>
+                        <p>120 м2</p>
+                      </li>
+                      <li>
+                        <p>Этажность:</p>
+                        <p>Два</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#"
+                    >ПОДРОБНЕЕ
+                    <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="home__popular-slider-nav">
+                <div>
+                  <button class="home__prev">
+                    <img src="./assets/icons/chevron-left.svg" alt="prev" />
+                  </button>
+                  <button class="home__next">
+                    <img src="./assets/icons/chevron-right.svg" alt="next" />
+                  </button>
+                </div>
+
+                <a href="#" class="home__popular-slider-catalog"
+                  >В каталог
+                  <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home__contacts">
+          <div class="container">
+            <div class="home__contacts-left">
+              <h2>НЕ НАШЛИ ПОДХОДЯЩИЙ <span> ПРОЕКТ </span>?</h2>
+              <img
+                src="./assets/images/Home/home-contacts.jpg"
+                alt="home contacts"
+              />
+            </div>
+
+            <div class="home__contacts-right">
+              <h4>
+                Получите <span>консультацию</span> от нашего
+                архитектора-конструктора. Обсудим Ваши пожелания и создадим
+                <span>индивидуальный</span> проект.
+              </h4>
+
+              <ul>
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  <p>
+                    Согласуем площадь дома, исходя из потребностей Вашей семьи
+                  </p>
+                </li>
+
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  <p>Начертим планировку</p>
+                </li>
+
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  <p>
+                    Создадим 3d модель дома еще до подписания договора и озвучим
+                    точную, окончательную стоимость
+                  </p>
+                </li>
+              </ul>
+
+              <form>
+                <input type="text" placeholder="Имя" />
+                <input
+                  id="phone"
+                  name="phone"
+                  value="+7 (___) ___-_-_"
+                  mask="+7 (___) ___-_-_"
+                  type="tel"
+                  placeholder="+7 (999) 999-99-99"
+                />
+                <input type="email" placeholder="E-mail" />
+              </form>
+
+              <button class="home__contacts-get">ПОЛУЧИТЬ</button>
+
+              <p class="home__contacts-personal">
+                Нажимая кнопку “ПОЛУЧИТЬ”, Вы даете согласие на
+                <a href="#">обработку своих персональных данных</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="home__advanced">
+          <div class="container">
+            <div class="home__advanced-wrapper">
+              <div>
+                <h2>ПРЕИМУЩЕСТВА</h2>
+              </div>
+
+              <div>
+                <ul>
+                  <li class="special">
+                    <h2>01</h2>
+                    <h3>Комплексный подход</h3>
+                    <p>
+                      Мы предлагаем полный спектр услуг, начиная с
+                      проектирования и заканчивая финишной отделкой. Вам не
+                      придется принимать непосредственного участия в каждом
+                      этапе строительства. Мы обо всем позаботимся.
+                    </p>
+                  </li>
+
+                  <li>
+                    <h2>02</h2>
+                    <h3>Выгода</h3>
+                    <p>
+                      Дома, построенные нами, практичны и не теряют свою
+                      рыночную стоимость с годами. С нами можно снизить
+                      эксплуатационные затраты
+                    </p>
+                  </li>
+
+                  <li>
+                    <h2>03</h2>
+                    <h3>Качество</h3>
+                    <p>
+                      Мы используем только проверенные годами узлы и технические
+                      решения. Строим экологичные качественные дома.
+                    </p>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <h2>04</h2>
+                    <h3>Возможность индивидуального проекта</h3>
+                    <p>
+                      Мы можем разработать уникальный проект, учитывая
+                      предпочтения и вкусы наших заказчиков, что позволяет
+                      получить загородный дом, полностью соответствующий Вашим
+                      желаниям.
+                    </p>
+                  </li>
+
+                  <li>
+                    <h2>05</h2>
+                    <h3>Инновации</h3>
+                    <p>
+                      Используем новые технологии проектирования. Воплощаем в
+                      реальность уникальные сложные идеи заказчиков с неизменным
+                      соответствием всем установленным стандартам и нормативам.
+                    </p>
+                  </li>
+
+                  <li>
+                    <h2>06</h2>
+                    <h3>Многолетний опыт и непревзойденная репутация</h3>
+                    <p>
+                      Наша компания имеет большой опыт в строительстве
+                      загородных домов и обладает прочной репутацией надежного и
+                      ответственного подрядчика.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home__banner">
+          <div class="container">
+            <div class="home__banner-wrapper">
+              <div
+                class="home__banner-back"
+                style="background-image: url(./assets/images/Home/banner.jpg)"
+              ></div>
+
+              <div class="home__banner-item">
+                <ul>
+                  <li>
+                    <h1>ЭКСКЛЮЗИВНОСТЬ</h1>
+                  </li>
+
+                  <li>
+                    <h1>ПРАКТИЧНОСТЬ</h1>
+                  </li>
+
+                  <li>
+                    <h1>ТЕХНОЛОГИЧНОСТЬ</h1>
+                  </li>
+
+                  <li>
+                    <h1>ФУНКЦИОНАЛЬНОСТЬ</h1>
+                  </li>
+                </ul>
+
+                <p>
+                  Погрузитесь в уют и комфорт скандинавских коттеджей! Откройте
+                  для себя уникальные дома мечты в нашем каталоге. Выбирайте
+                  красоту и функциональность вместе с нами!
+                </p>
+
+                <a href="#"
+                  >выбрать красоту
+                  <img src="./assets/icons/arrowRight.svg" alt="arrow right"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home__gallery">
+          <div class="container">
+            <h1>ГАЛЕРЕЯ ВЫПОЛНЕННЫХ <span>ПРОЕКТОВ</span></h1>
+          </div>
+
+          <div class="home__gallery-images">
+            <img src="./assets/images/Home/gallery.png" alt="gallery" />
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/phonemask.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

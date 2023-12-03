@@ -1,0 +1,9 @@
+:root {
+  --color-yellow: #fbda94;
+  --color-white: #fff;
+  --color-black: #0a0a0a;
+  --color-bg: #f4f4f4;
+  --color-gray: rgba(10, 10, 10, 0.6);
+
+  --border-radius-md: 8px;
+}
